@@ -12,6 +12,9 @@ jobs:
         with:
           clean: true
 
+      - name: "Checkout submodules"
+        run: git submodule update --init
+
       - name: ShowMe
         run: ls -la
 
